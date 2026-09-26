@@ -82,33 +82,15 @@ export default function ControlPanel({
                 <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
                   AI Upscale Multiplier
                 </label>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 gap-3">
                   <button
                     type="button"
-                    onClick={() => setUpscaleFactor(2)}
-                    className={`py-3 px-4 rounded-xl font-bold text-sm flex items-center justify-center space-x-2 border transition-all ${
-                      upscaleFactor === 2
-                        ? 'bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-500/25 ring-2 ring-blue-500/20'
-                        : 'bg-slate-50 hover:bg-slate-100 text-slate-700 border-slate-200'
-                    }`}
+                    onClick={() => setUpscaleFactor && setUpscaleFactor(2)}
+                    className="py-3 px-4 rounded-xl font-bold text-sm flex items-center justify-center space-x-2 border bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-500/25 ring-2 ring-blue-500/20 cursor-default"
                   >
                     <Maximize2 className="w-4 h-4" />
                     <span>2× Scale</span>
                     <span className="text-[10px] font-mono opacity-80">({imageData.width * 2}×{imageData.height * 2})</span>
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={() => setUpscaleFactor(4)}
-                    className={`py-3 px-4 rounded-xl font-bold text-sm flex items-center justify-center space-x-2 border transition-all ${
-                      upscaleFactor === 4
-                        ? 'bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-500/25 ring-2 ring-blue-500/20'
-                        : 'bg-slate-50 hover:bg-slate-100 text-slate-700 border-slate-200'
-                    }`}
-                  >
-                    <Maximize2 className="w-4 h-4" />
-                    <span>4× Ultra</span>
-                    <span className="text-[10px] font-mono opacity-80">({imageData.width * 4}×{imageData.height * 4})</span>
                   </button>
                 </div>
               </div>

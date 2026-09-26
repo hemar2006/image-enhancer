@@ -14,7 +14,7 @@ export default function HeaderHero() {
       </h1>
 
       <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-normal leading-relaxed mb-8">
-        Turn blurry or low-resolution photos into crystal-clear images up to 4× larger in seconds. Completely free & processed locally.
+        Turn blurry or low-resolution photos into crystal-clear images 2× larger in seconds. Completely free & processed locally.
       </p>
 
       {/* Feature highlights */}
@@ -24,7 +24,7 @@ export default function HeaderHero() {
             <Maximize2 className="w-4 h-4" />
           </div>
           <div>
-            <div className="text-xs font-bold text-slate-900">2× & 4× Scale</div>
+            <div className="text-xs font-bold text-slate-900">2× Scale</div>
             <div className="text-[11px] text-slate-500">Sub-pixel detail</div>
           </div>
         </div>

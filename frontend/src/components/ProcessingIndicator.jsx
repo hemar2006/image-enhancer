@@ -4,7 +4,7 @@ import { Loader2, Sparkles, Cpu, CheckCircle2 } from 'lucide-react';
 const STEPS = [
   'Decoding image & validating format...',
   'Applying AI noise reduction pass...',
-  'Processing 2×/4× neural super-resolution...',
+  'Processing 2× neural super-resolution...',
   'Refining edge contrast & sharpening details...',
   'Packaging high-definition PNG output...'
 ];

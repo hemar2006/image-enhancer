@@ -1,7 +1,7 @@
-import axios from 'axios';
+﻿import axios from 'axios';
 
-// Local FastAPI Backend Base URL
-const API_BASE_URL = '/api';
+// FastAPI Backend Base URL (uses Vite env var or defaults to local proxy)
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api';
 
 export const checkHealth = async () => {
   try {

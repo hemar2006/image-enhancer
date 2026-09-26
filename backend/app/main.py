@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+﻿from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routes.enhance import router as enhance_router
 
@@ -10,13 +10,13 @@ app = FastAPI(
     redoc_url="/redoc"
 )
 
-# Enable CORS for local React frontend development
+# Enable CORS for local React frontend and production Render frontend
 origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "*"
+    "https://image-enhancer-1-5xev.onrender.com"
 ]
 
 app.add_middleware(

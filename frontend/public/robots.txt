@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://image-enhancer-1-5xev.onrender.com/sitemap.xml
